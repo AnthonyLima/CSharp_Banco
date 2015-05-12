@@ -49,13 +49,14 @@ namespace ClasesBancoCSharp
         }
 
 
-        //public Cuenta(TipoMoneda moneda) {    //este es el constructor
-        //    this._NumeroCuenta = 0;
-        //    this._moneda = moneda;
-        //    this._FechaApertura = DateTime.Now;
-        //    this._Estado = EstadoCuenta.Activa;
-        //    this._Saldo = 0;
-        //}
+        public Cuenta(TipoMoneda moneda)
+        {    //este es el constructor
+            this._NumeroCuenta = 0;
+            this._moneda = moneda;
+            this._FechaApertura = DateTime.Now;
+            this._Estado = EstadoCuenta.Activa;
+            this._Saldo = 0;
+        }
 
 
 

@@ -31,7 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cbClientes = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbNumeroCuenta = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.cbTipoMoneda = new System.Windows.Forms.ComboBox();
             this.btnCrear = new System.Windows.Forms.Button();
@@ -64,12 +64,12 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Nº Cuenta";
             // 
-            // textBox1
+            // tbNumeroCuenta
             // 
-            this.textBox1.Location = new System.Drawing.Point(141, 78);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(157, 20);
-            this.textBox1.TabIndex = 3;
+            this.tbNumeroCuenta.Location = new System.Drawing.Point(141, 78);
+            this.tbNumeroCuenta.Name = "tbNumeroCuenta";
+            this.tbNumeroCuenta.Size = new System.Drawing.Size(157, 20);
+            this.tbNumeroCuenta.TabIndex = 3;
             // 
             // label3
             // 
@@ -115,7 +115,7 @@
             this.Controls.Add(this.btnCrear);
             this.Controls.Add(this.cbTipoMoneda);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbNumeroCuenta);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cbClientes);
             this.Controls.Add(this.label1);
@@ -132,7 +132,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbClientes;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbNumeroCuenta;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cbTipoMoneda;
         private System.Windows.Forms.Button btnCrear;

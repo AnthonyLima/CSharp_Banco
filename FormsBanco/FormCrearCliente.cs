@@ -29,6 +29,8 @@ namespace FormsBanco
             nuevocliente.Apellido = tbApellido.Text;
             nuevocliente.Dni = tbDni.Text;
 
+            Program.clientes.Add(nuevocliente);
+
             lbClientes.Items.Add(nuevocliente);
         }
 
@@ -38,7 +40,6 @@ namespace FormsBanco
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            
         }
     }
 }

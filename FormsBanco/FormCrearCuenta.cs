@@ -15,8 +15,9 @@ namespace FormsBanco
     {
         public FormCrearCuenta()
         {
-            foreach (Cliente obj in Program.clientes)
+            foreach (Cliente obj in Program.clientes )
             {
+                cbClientes.Items.Clear();
                 cbClientes.Items.Add(obj);
             }
 
@@ -28,7 +29,15 @@ namespace FormsBanco
 
         private void FormCrearCuenta_Load(object sender, EventArgs e)
         {
-
+            if (cbTipoMoneda.SelectedItem == "Soles")
+            {
+                Cuenta nuevacuenta = new Cuenta(TipoMoneda.Soles);
+            }
+            else
+            {
+                Cuenta nuevacuenta = new Cuenta(TipoMoneda.Dolares);
+            }
+            
         }
 
     }
