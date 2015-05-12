@@ -8,8 +8,7 @@ namespace ClasesBancoCSharp
 {
     public class ClaseCuentaCorriente:Cuenta
     {
-        public ClaseCuentaCorriente(TipoMoneda moneda)
-            :base(moneda)
+        public ClaseCuentaCorriente(TipoMoneda moneda)//:base(moneda)
         {
         }
     }

@@ -36,6 +36,7 @@
             this.tbNombre = new System.Windows.Forms.TextBox();
             this.tbApellido = new System.Windows.Forms.TextBox();
             this.tbDni = new System.Windows.Forms.TextBox();
+            this.lbClientes = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // label1
@@ -83,6 +84,7 @@
             this.btnCancelar.TabIndex = 4;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // tbNombre
             // 
@@ -105,11 +107,20 @@
             this.tbDni.Size = new System.Drawing.Size(132, 20);
             this.tbDni.TabIndex = 7;
             // 
+            // lbClientes
+            // 
+            this.lbClientes.FormattingEnabled = true;
+            this.lbClientes.Location = new System.Drawing.Point(313, 13);
+            this.lbClientes.Name = "lbClientes";
+            this.lbClientes.Size = new System.Drawing.Size(297, 225);
+            this.lbClientes.TabIndex = 8;
+            // 
             // FormCrearCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(310, 256);
+            this.ClientSize = new System.Drawing.Size(622, 256);
+            this.Controls.Add(this.lbClientes);
             this.Controls.Add(this.tbDni);
             this.Controls.Add(this.tbApellido);
             this.Controls.Add(this.tbNombre);
@@ -136,5 +147,6 @@
         private System.Windows.Forms.TextBox tbNombre;
         private System.Windows.Forms.TextBox tbApellido;
         private System.Windows.Forms.TextBox tbDni;
+        private System.Windows.Forms.ListBox lbClientes;
     }
 }

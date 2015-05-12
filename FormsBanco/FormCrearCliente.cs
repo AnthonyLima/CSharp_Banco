@@ -16,6 +16,10 @@ namespace FormsBanco
         public FormCrearCliente()
         {
             InitializeComponent();
+            foreach (Cliente obj in Program.clientes)
+            {
+                lbClientes.Items.Add(obj);
+            }
         }
 
         private void tnCrear_Click(object sender, EventArgs e)
@@ -25,12 +29,16 @@ namespace FormsBanco
             nuevocliente.Apellido = tbApellido.Text;
             nuevocliente.Dni = tbDni.Text;
 
-
+            lbClientes.Items.Add(nuevocliente);
         }
 
         private void FormCrearCliente_Load(object sender, EventArgs e)
         {
+        }
 
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

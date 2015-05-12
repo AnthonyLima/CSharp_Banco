@@ -15,12 +15,21 @@ namespace FormsBanco
     {
         public FormCrearCuenta()
         {
+            foreach (Cliente obj in Program.clientes)
+            {
+                cbClientes.Items.Add(obj);
+            }
+
             InitializeComponent();
+            cbTipoMoneda.Items.Add("Soles");
+            cbTipoMoneda.Items.Add("Dolares");
+            
         }
 
         private void FormCrearCuenta_Load(object sender, EventArgs e)
         {
 
         }
+
     }
 }

@@ -52,7 +52,7 @@
             this.cbClientes.FormattingEnabled = true;
             this.cbClientes.Location = new System.Drawing.Point(141, 38);
             this.cbClientes.Name = "cbClientes";
-            this.cbClientes.Size = new System.Drawing.Size(121, 21);
+            this.cbClientes.Size = new System.Drawing.Size(157, 21);
             this.cbClientes.TabIndex = 1;
             // 
             // label2
@@ -68,7 +68,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(141, 78);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 20);
+            this.textBox1.Size = new System.Drawing.Size(157, 20);
             this.textBox1.TabIndex = 3;
             // 
             // label3
@@ -85,7 +85,7 @@
             this.cbTipoMoneda.FormattingEnabled = true;
             this.cbTipoMoneda.Location = new System.Drawing.Point(141, 122);
             this.cbTipoMoneda.Name = "cbTipoMoneda";
-            this.cbTipoMoneda.Size = new System.Drawing.Size(121, 21);
+            this.cbTipoMoneda.Size = new System.Drawing.Size(157, 21);
             this.cbTipoMoneda.TabIndex = 5;
             // 
             // btnCrear
@@ -110,7 +110,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(356, 365);
+            this.ClientSize = new System.Drawing.Size(356, 263);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnCrear);
             this.Controls.Add(this.cbTipoMoneda);

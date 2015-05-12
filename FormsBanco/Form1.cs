@@ -16,5 +16,22 @@ namespace FormsBanco
         {
             InitializeComponent();
         }
+
+        private void btnCrearCliente_Click(object sender, EventArgs e)
+        {
+            FormCrearCliente frm = new FormCrearCliente();
+            frm.Show();
+        }
+
+        private void btnCrearCuenta_Click(object sender, EventArgs e)
+        {
+            FormCrearCuenta frm = new FormCrearCuenta();
+            frm.Show();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

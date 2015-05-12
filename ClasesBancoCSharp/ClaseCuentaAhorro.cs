@@ -8,8 +8,7 @@ namespace ClasesBancoCSharp
 {
     public class ClaseCuentaAhorro:Cuenta
     {
-        public ClaseCuentaAhorro(TipoMoneda moneda)  //este constructor usa lo de cuenta y lo complementa
-           :base(moneda)
+        public ClaseCuentaAhorro(TipoMoneda moneda)//:base(moneda)  //este constructor usa lo de cuenta y lo complementa
         {
         }
     }

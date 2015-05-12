@@ -44,6 +44,7 @@
             this.btnCrearCliente.TabIndex = 0;
             this.btnCrearCliente.Text = "Crear Cliente";
             this.btnCrearCliente.UseVisualStyleBackColor = true;
+            this.btnCrearCliente.Click += new System.EventHandler(this.btnCrearCliente_Click);
             // 
             // btnCrearCuenta
             // 
@@ -53,6 +54,7 @@
             this.btnCrearCuenta.TabIndex = 1;
             this.btnCrearCuenta.Text = "CrearCuenta";
             this.btnCrearCuenta.UseVisualStyleBackColor = true;
+            this.btnCrearCuenta.Click += new System.EventHandler(this.btnCrearCuenta_Click);
             // 
             // btnHacerDeposito
             // 
@@ -103,6 +105,7 @@
             this.Controls.Add(this.btnCrearCliente);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
