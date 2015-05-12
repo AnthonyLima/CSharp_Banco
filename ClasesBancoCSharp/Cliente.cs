@@ -19,13 +19,17 @@ namespace ClasesBancoCSharp
 
         public List<Cuenta> cuentas = new List<Cuenta>();  //una lista para mostrar las cuentas del cliente
 
-
-        public Cuenta CrearCuenta(TipoMoneda moneda)
+        public override string ToString()
         {
-            Cuenta NuevaCuenta = new Cuenta(moneda);
-            this.cuentas.Add(NuevaCuenta);
-            return NuevaCuenta;  //devuelve la nueva cuenta
+            return String.Format("{0} {1} {2}",this.Dni,this.Nombre,this.Apellido);
         }
+
+        //public Cuenta CrearCuenta(TipoMoneda moneda)
+        //{
+        //    Cuenta NuevaCuenta = new Cuenta(moneda);
+        //    this.cuentas.Add(NuevaCuenta);
+        //    return NuevaCuenta;  //devuelve la nueva cuenta
+        //}
         public void CerrarCuenta() { }
     }
 }

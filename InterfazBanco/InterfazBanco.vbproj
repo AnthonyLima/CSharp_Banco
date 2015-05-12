@@ -109,6 +109,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCrearCliente.resx">
+      <DependentUpon>FormCrearCliente.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCrearCuenta.resx">
       <DependentUpon>FormCrearCuenta.vb</DependentUpon>
     </EmbeddedResource>
