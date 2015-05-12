@@ -8,7 +8,7 @@ namespace ClasesBancoCSharp
 {
     public class Cliente
     {
-        protected string Dni { get; set; }
+        public string Dni { get; set; }
         public string Nombre { get; set; }
         public string Direccion { get; set; }
         public string Telefono { get; set; }
@@ -23,6 +23,7 @@ namespace ClasesBancoCSharp
         {
             return String.Format("{0} {1} {2}",this.Dni,this.Nombre,this.Apellido);
         }
+
 
         //public Cuenta CrearCuenta(TipoMoneda moneda)
         //{

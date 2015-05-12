@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BancoConsolaC
+namespace BnacoForms
 {
-    public partial class FormsCrearCliente : Form
+    public partial class Form1 : Form
     {
-        public FormsCrearCliente()
+        public Form1()
         {
             InitializeComponent();
         }
