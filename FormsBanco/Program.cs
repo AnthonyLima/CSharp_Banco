@@ -9,7 +9,10 @@ namespace FormsBanco
 {
     static class Program
     {
+
         public static List<Cliente> clientes = new List<Cliente>();
+
+        public static List<Cuenta> Cuentas = new List<Cuenta>(); 
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>

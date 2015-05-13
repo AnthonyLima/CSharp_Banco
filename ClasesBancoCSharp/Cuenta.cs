@@ -21,11 +21,11 @@ namespace ClasesBancoCSharp
 
     public class Cuenta
     {
-        private DateTime _FechaApertura; //guarda fecha apertura lo protege
-        private int _NumeroCuenta;  //igual con numero cuenta
-        private TipoMoneda _moneda; //esta es la variable que guarda moneda, usa enumeracion ver arriba
-        private EstadoCuenta _Estado;
-        private decimal _Saldo;
+        public DateTime _FechaApertura; //guarda fecha apertura lo protege
+        public int _NumeroCuenta;  //igual con numero cuenta
+        public TipoMoneda _moneda; //esta es la variable que guarda moneda, usa enumeracion ver arriba
+        public EstadoCuenta _Estado;
+        public decimal _Saldo;
 
         public int NumeroCuenta
         {
@@ -49,16 +49,23 @@ namespace ClasesBancoCSharp
         }
 
 
-        public Cuenta(TipoMoneda moneda)
+        //public Cuenta(TipoMoneda moneda)
+        //{    //este es el constructor
+        //    this._NumeroCuenta = 0;
+        //    this._moneda = moneda;
+        //    this._FechaApertura = DateTime.Now;
+        //    this._Estado = EstadoCuenta.Activa;
+        //    this._Saldo = 0;
+        //}
+
+        public Cuenta()
         {    //este es el constructor
-            this._NumeroCuenta = 0;
-            this._moneda = moneda;
+            //this._NumeroCuenta = 0;
+            //this._moneda = moneda;
             this._FechaApertura = DateTime.Now;
             this._Estado = EstadoCuenta.Activa;
             this._Saldo = 0;
         }
-
-
 
         public void SumarSaldo(decimal monto)   //operacion usada en los depositos
         {

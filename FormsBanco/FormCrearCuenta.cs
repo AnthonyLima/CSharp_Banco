@@ -15,29 +15,38 @@ namespace FormsBanco
     {
         public FormCrearCuenta()
         {
+            InitializeComponent();
+            foreach (Cuenta obj in Program.Cuentas)
+            {
+                lbCuentas.Items.Add(obj);
+            }
+
             foreach (Cliente obj in Program.clientes )
             {
-                cbClientes.Items.Clear();
                 cbClientes.Items.Add(obj);
             }
 
-            InitializeComponent();
-            cbTipoMoneda.Items.Add("Soles");
-            cbTipoMoneda.Items.Add("Dolares");
+            cbTipoMoneda.Items.Add(TipoMoneda.Soles);
+            cbTipoMoneda.Items.Add(TipoMoneda.Dolares);
             
         }
 
         private void FormCrearCuenta_Load(object sender, EventArgs e)
         {
-            if (cbTipoMoneda.SelectedItem == "Soles")
-            {
-                Cuenta nuevacuenta = new Cuenta(TipoMoneda.Soles);
-            }
-            else
-            {
-                Cuenta nuevacuenta = new Cuenta(TipoMoneda.Dolares);
-            }
             
+
+        }
+
+        private void btnCrear_Click(object sender, EventArgs e)
+        {
+            Cuenta nuevacuenta = new Cuenta();
+            nuevacuenta._moneda = (TipoMoneda)cbTipoMoneda.SelectedItem;
+            nuevacuenta._NumeroCuenta = Int32.Parse(tbNumeroCuenta.Text);
+
+            Program.Cuentas.Add(nuevacuenta);
+
+            lbCuentas.Items.Add(nuevacuenta);
+
         }
 
     }

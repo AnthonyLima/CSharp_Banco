@@ -36,6 +36,7 @@
             this.cbTipoMoneda = new System.Windows.Forms.ComboBox();
             this.btnCrear = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.lbCuentas = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // label1
@@ -96,6 +97,7 @@
             this.btnCrear.TabIndex = 6;
             this.btnCrear.Text = "Crear";
             this.btnCrear.UseVisualStyleBackColor = true;
+            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
             // btnCancelar
             // 
@@ -106,11 +108,20 @@
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             // 
+            // lbCuentas
+            // 
+            this.lbCuentas.FormattingEnabled = true;
+            this.lbCuentas.Location = new System.Drawing.Point(327, 26);
+            this.lbCuentas.Name = "lbCuentas";
+            this.lbCuentas.Size = new System.Drawing.Size(243, 212);
+            this.lbCuentas.TabIndex = 8;
+            // 
             // FormCrearCuenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(356, 263);
+            this.ClientSize = new System.Drawing.Size(593, 263);
+            this.Controls.Add(this.lbCuentas);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnCrear);
             this.Controls.Add(this.cbTipoMoneda);
@@ -137,5 +148,6 @@
         private System.Windows.Forms.ComboBox cbTipoMoneda;
         private System.Windows.Forms.Button btnCrear;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.ListBox lbCuentas;
     }
 }
